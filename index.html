@@ -1,53 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026世界杯冠军预测</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/contenders.css">
     <style>
-        .prediction-links {
+        .predictions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
         }
         
         .prediction-link {
             background: var(--light-bg);
-            border-radius: 12px;
+            border-radius: 16px;
             padding: 1.5rem;
             text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
             color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         
         .prediction-link:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
         }
         
         .prediction-link img {
             width: 120px;
             height: auto;
-            margin-bottom: 1rem;
-            filter: drop-shadow(0 3px 10px rgba(0,0,0,0.1));
-            transition: transform 0.3s ease;
-        }
-        
-        .prediction-link:hover img {
-            transform: scale(1.05);
+            margin: 0 auto 1rem;
+            display: block;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
         }
         
         .prediction-link h3 {
-            margin: 0.5rem 0;
+            margin-bottom: 0.5rem;
             color: var(--primary-color);
+        }
+        
+        .prediction-link p {
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -55,45 +52,48 @@
     <div class="container">
         <header>
             <h1>2026世界杯冠军预测</h1>
-            <p>基于全面分析的专业预测结果</p>
+            <p>探索各支球队在2026年北美世界杯的夺冠可能性</p>
         </header>
 
-        <div class="prediction-card">
+        <section>
             <h2>热门夺冠球队分析</h2>
-            <p>2026年世界杯将在美国、加拿大和墨西哥联合举办，这将是足球历史上首次由三个国家共同举办的世界杯。以下是我们对各支热门球队的夺冠预测分析。</p>
+            <p>根据历史数据、球队实力、球员状态和专家观点，我们对2026年世界杯的夺冠热门进行了详细分析。点击下方链接查看各支球队的详细预测。</p>
             
-            <div class="prediction-links">
+            <div class="predictions-grid">
                 <a href="argentina-prediction.html" class="prediction-link">
                     <img src="img/argentina-flag.svg" alt="阿根廷国旗">
                     <h3>阿根廷</h3>
-                    <p>卫冕冠军，梅西领军</p>
+                    <p>卫冕冠军，拥有成熟的战术体系和一批正值巅峰的球员</p>
                 </a>
+                
                 <a href="prediction.html" class="prediction-link">
                     <img src="img/france-flag.svg" alt="法国国旗">
                     <h3>法国</h3>
-                    <p>青训体系强大，姆巴佩当打之年</p>
+                    <p>人才济济，姆巴佩领衔的新生代将达到职业生涯巅峰</p>
                 </a>
+                
                 <a href="#" class="prediction-link">
                     <img src="img/spain-flag.svg" alt="西班牙国旗">
                     <h3>西班牙</h3>
-                    <p>年轻一代成熟，技术流足球</p>
+                    <p>年轻一代崛起，传控足球重回巅峰</p>
                 </a>
+                
                 <a href="#" class="prediction-link">
                     <img src="img/england-flag.svg" alt="英格兰国旗">
                     <h3>英格兰</h3>
-                    <p>黄金一代，渴望首冠</p>
+                    <p>黄金一代成熟，贝林厄姆领衔的新星闪耀</p>
                 </a>
+                
                 <a href="#" class="prediction-link">
                     <img src="img/brazil-flag.svg" alt="巴西国旗">
                     <h3>巴西</h3>
-                    <p>桑巴军团，期待复兴</p>
+                    <p>五星巴西，永远的世界杯热门</p>
                 </a>
             </div>
-        </div>
+        </section>
 
         <footer>
-            <p>预测基于对球队实力、球员年龄、历史表现和比赛环境等因素的综合分析</p>
-            <p>© 2025 世界杯预测分析</p>
+            <p>© 2025 世界杯预测分析 | 数据更新于2025年6月</p>
         </footer>
     </div>
 </body>
