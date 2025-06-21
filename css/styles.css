@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #0055a4;
+    --secondary-color: #ef4135;
+    --accent-color: #f9d71c;
+    --text-color: #2c3e50;
+    --light-bg: rgba(255,255,255,0.85);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 0;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.prediction-card {
+    background: var(--light-bg);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 800px;
+}
+
+.prediction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.team-flag {
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
+    transition: transform 0.3s ease;
+}
+
+.team-flag:hover {
+    transform: scale(1.05);
+}
+
+.reasons {
+    margin-top: 2.5rem;
+}
+
+.reason-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    border-left: 5px solid var(--accent-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.reason-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.reason-item strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
