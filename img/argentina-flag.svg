@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
+    <rect width="900" height="600" fill="#74ACDF"/>
+    <rect width="900" height="200" y="200" fill="white"/>
+    <circle cx="450" cy="300" r="60" fill="#F6B40E" stroke="#85340A" stroke-width="1.5"/>
+    <g id="sun" fill="#F6B40E">
+        <path d="M450,290 l-10,30 l20,0 z"/>
+        <path d="M450,310 l10,-30 l-20,0 z"/>
+        <path d="M435,300 l30,10 l0,-20 z"/>
+        <path d="M465,300 l-30,-10 l0,20 z"/>
+        <path d="M439,285 l21,21 l7,-17 z"/>
+        <path d="M461,315 l-21,-21 l-7,17 z"/>
+        <path d="M439,315 l21,-21 l-17,-7 z"/>
+        <path d="M461,285 l-21,21 l17,7 z"/>
+    </g>
+</svg>
